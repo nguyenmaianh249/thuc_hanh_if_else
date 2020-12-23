@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Kiểm tra số chẵn </title>
+</head>
+
+<body>
+    <form>
+        <p>Nhập số</p> <br/>
+        <input type="text" id="so" />
+        <button type="button" onclick="kiem_tra()">Kiểm tra </button>
+    </form>
+    <script>
+    </script>
+</body>
+<script>
+    function kiem_tra() {
+        let so_kiem_tra = Number(document.getElementById("so").value);
+        if (so_kiem_tra % 2 == 0) {
+            alert(so_kiem_tra + ' là số chẵn ');
+        } else {
+            alert(so_kiem_tra + ' là số lẻ');
+        }
+    }
+</script>
+
+</html>
